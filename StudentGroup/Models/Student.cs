@@ -19,7 +19,7 @@ namespace StudentGroup.Models
 
         }
 
-        public Student(string fullName,string subject,int groupNo)
+        public Student(string fullName,string subject)
         {
             _id++;
             Id = _id;

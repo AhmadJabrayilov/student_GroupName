@@ -2,7 +2,10 @@
 using StudentGroup.Models;
 using StudentGroup.Extension;
 
+
+using StudentGroup.Extension;
 namespace StudentGroup
+
 {
     internal class Program
     {
@@ -10,13 +13,15 @@ namespace StudentGroup
         {
             Student student1 = new Student();
             student1.Fullname = "Ahmed Jabrayilov";
+            student1.Subject = "Riyaziyyat";
 
-            Student student2 = new Student("Ilkin Ibrahimov","BBBBB",1);
 
-            Console.WriteLine(student1);
-            Console.WriteLine(student2.GroupNo);
+            Student student2 = new Student("Ilkin Ibrahimov","BBBBB");
 
-            Extensions.GroupName()
+            Console.WriteLine(Extensions.GroupName(student1.Subject)+student1.GroupNo);
+
+            
+            
         }
     }
 }
